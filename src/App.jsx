@@ -151,15 +151,15 @@ function App() {
       </div>
       <div className="board" style={{ gridTemplateColumns: `repeat(${BOARD_SIZE}, 1fr)` }}>
         {cells}
-      </div>
-      {!isRunning && (
-        <div className="overlay">
-          <div className="overlay-content">
-            <h2>Juego terminado</h2>
-            <p>Pulsa "Reiniciar" o la tecla Enter para jugar de nuevo.</p>
+        {!isRunning && (
+          <div className="overlay">
+            <div className="overlay-content">
+              <h2>Juego terminado</h2>
+              <p>Pulsa "Reiniciar" o la tecla Enter para jugar de nuevo.</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
